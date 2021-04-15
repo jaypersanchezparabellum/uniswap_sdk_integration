@@ -57,10 +57,10 @@ async function getPair() {
     const value = trade.inputAmount.raw; //HOW MUCH ETH WE ARE WILLING TO SEND
     
     const provider = ethers.getDefaultProvider('mainnet', {
-        infura: 'https://mainnet.infura.io/v3/6fd2fd8e1b334661b0c38556bd48b257'
+        infura: 'https://mainnet.infura.io/v3/......'
     })
 
-    const signer = new ethers.Wallet('386cdf0dbac6075c8ccc38576e4262b003bff87a5f7d9699243b3f18c9b92d2c')
+    const signer = new ethers.Wallet('PRIVATEKEY')
     const account = signer.connect(provider)
 
     const uniswap = new ethers.Contract(
